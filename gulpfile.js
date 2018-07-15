@@ -9,6 +9,7 @@ var server = require("browser-sync").create();
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var posthtml = require("gulp-posthtml");
+var imagemin = require("gulp-imagemin");
 var include = require("posthtml-include");
 var run = require("run-sequence");
 var del = require("del");
@@ -28,6 +29,16 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("images", function () {
+  return gulp.src("img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("img"));
 });
 
 gulp.task("html", function() {
