@@ -1,0 +1,208 @@
+.main-footer
+{
+  padding-bottom: 29px;
+
+  background-color: #f2f2f2;
+}
+
+.main-footer__wrapper
+{
+  width: 877px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  padding-top: 73px;
+  padding-right: 5px;
+}
+
+.main-footer__social
+{
+  margin-bottom: 76px;
+
+  text-align: center;
+}
+
+.main-footer__social-buttons
+{
+  display: flex;
+  justify-content: space-between;
+
+  width: 218px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  padding-left: 6px;
+}
+
+.main-footer__social-btn
+{
+  display: block;
+
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../img/fb.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: @color-orange;
+
+  transition: @transition-small;
+
+  &--vk
+  {
+    background-image: url("../img/vkont.svg");
+  }
+
+  &--inst
+  {
+    background-image: url("../img/inst.svg");
+  }
+
+  &:hover,
+  &:focus
+  {
+    background-color: #ff7b59;
+
+    box-shadow: 0 15px 20px 0 rgba(249, 87, 46, 0.7);
+  }
+}
+
+.main-footer__follow
+{
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 21px;
+  line-height: 1.24;
+}
+
+.main-footer__subscribe
+{
+  margin: 0;
+  padding-left: 10px;
+
+  color: @color-gray;
+}
+
+.main-footer__contacts
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 103px;
+}
+
+.main-footer__phone
+{
+  position: relative;
+
+  margin: 0;
+  padding-top: 8px;
+  padding-left: 33px;
+
+  font-size: 21px;
+
+  &::before
+  {
+    position: absolute;
+    top: 8px;
+    left: 0;
+
+    width: 25px;
+    height: 26px;
+
+    content: "";
+
+    background-image: url("../img/phone.svg");
+  }
+}
+
+.main-footer__address
+{
+  margin-right: 10px;
+
+  text-align: center;
+}
+
+.main-footer__street
+{
+  margin: 0;
+
+  font-size: 21px;
+  line-height: 1.43;
+}
+
+.main-footer__city
+{
+  margin: 0;
+  padding-left: 5px;
+  color: @color-gray;
+}
+
+.main-footer__email
+{
+  position: relative;
+
+  margin: 0;
+  padding-top: 9px;
+
+  font-size: 21px;
+  line-height: 1.43;
+
+  color: @color-black;
+
+  border-bottom: solid 2px @color-orange;
+
+  transition: @transition-small;
+
+  &::before
+  {
+    position: absolute;
+    top: 11px;
+    left: -40px;
+
+    width: 32px;
+    height: 22px;
+
+    content: "";
+
+    background-image: url("../img/post.svg");
+
+    transition: @transition-small;
+  }
+
+  &:hover,
+  &:focus
+  {
+    color: #f9572e;
+  }
+}
+
+.main-footer__copyright
+{
+  position: relative;
+
+  text-align: center;
+
+  &::before
+  {
+    position: absolute;
+    top: -33px;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 91.6489362%;
+    height: 1px;
+    margin: 0 auto;
+
+    background-color: #cccccc;
+
+    content: "";
+  }
+}
+
+.main-footer__company
+{
+  margin: 0;
+
+  color: @color-gray;
+}

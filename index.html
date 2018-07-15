@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fix-ремонт</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+  <body>
+    <main class="main">
+      <section class="main-screen">
+        <div class="main-screen__promo">
+          <a href="#" class="main-screen__logo">
+            <img src="img/logotype.svg" alt="Логотип Fix Ремонт">
+          </a>
+          <div class="main-screen__offer">
+            <h2 class="main-screen__heading">Ремонт квартир<br/> в типовых домах</h2>
+            <p class="main-screen__paragraph">Готовый дизайн-проект, работы и материалы<br/> за 3 месяца от 610 т.р.</p>
+            <div class="main-screen__wrapper">
+              <a href="#subscribe" class="main-screen__to-know btn">
+                Узнайте о запуске первым
+              </a>
+              <span class="main-screen__data">Старт весной 2016</span>
+            </div>
+          </div>
+          <a href="#advantages" class="main-screen__down">
+            Листайте вниз,<br/> чтобы ничего не упустить
+          </a>
+        </div>
+        <div class="main-screen__video">
+          <video poster="img/img.jpg">
+            <!--Здесь может быть ваше видео-->
+          </video>
+          <a href="#footer" class="main-screen__contact">
+            <span class="main-screen__caption">Контакты</span>
+          </a>
+          <button class="main-screen__play">
+            Смотреть видео
+          </button>
+        </div>
+      </section>
+
+      <section class="advantages" id="advantages">
+        <h2 class="heading">FIX Ремонт — это легко</h2>
+        <p class="advantages__caption">Готовые проекты, проверенные материалы и умелые руки</p>
+        <div class="advantages__list">
+          <div class="advantages__item">
+            <h3 class="advantages__head">
+              Опытная команда
+            </h3>
+            <p class="advantages__paragraph">
+              Команда проектировщиков и строителей со стажем  работы более 6 лет
+
+            </p>
+          </div>
+          <div class="advantages__item">
+            <h3 class="advantages__head">
+              Типовые дизайн-проекты
+            </h3>
+            <p class="advantages__paragraph">
+              Три стиля чистовой отделки «под ключ» и спектр  дополнительных услуг
+            </p>
+          </div>
+          <div class="advantages__item">
+            <h3 class="advantages__head">
+              Фиксированная смета
+            </h3>
+            <p class="advantages__paragraph">
+              Никаких дополнительных расходов во время ремонта.  Расчет стоимости при заключении договора
+            </p>
+          </div>
+          <div class="advantages__item">
+            <h3 class="advantages__head advantages__head--term">
+              Срок работ
+            </h3>
+            <p class="advantages__paragraph advantages__paragraph--term">
+              3 месяца
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slider">
+        <div class="slider__heading-wrapper">
+          <h2 class="heading">3 стиля интерьера</h2>
+          <p class="slider__caption">Скандинавский, классический и эко-стиль</p>
+        </div>
+        <div class="slider__container">
+          <div class="slider__item">
+            <img src="img/bitmap-2.jpg" srcset="img/bitmap-2@2x.jpg 2x, img/bitmap-2@3x.jpg 3x" alt="Скандинавский стиль">
+            <p class="slider__style">
+              Кафельная плитка<br/> в ванной комнате<br/> в скандинавском стиле
+            </p>
+          </div>
+          <div class="slider__item slider__item--active">
+            <img src="img/bitmap-2.jpg" srcset="img/bitmap-2@2x.jpg 2x, img/bitmap-2@3x.jpg 3x" alt="Скандинавский стиль">
+            <p class="slider__style">
+              Кафельная плитка<br/> в ванной комнате<br/> в скандинавском стиле
+            </p>
+          </div>
+          <div class="slider__item">
+            <img src="img/bitmap-2.jpg" srcset="img/bitmap-2@2x.jpg 2x, img/bitmap-2@3x.jpg 3x" alt="Скандинавский стиль">
+            <p class="slider__style">
+              Кафельная плитка<br/> в ванной комнате<br/> в скандинавском стиле
+            </p>
+          </div>
+        </div>
+        <div class="slider__btns">
+          <button class="slider__btn slider__btn--left" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider__btn slider__btn--right" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="subscription">
+        <h2 class="heading heading--subscription" id="subscribe">Узнайте о запуске сервиса первым</h2>
+        <div class="subscription__wrapper">
+          <h3 class="subscription__caption">Первым 10 клиентам стальная<br/> входная дверь в подарок</h3>
+          <form class="subscription__form" action="#" method="post">
+            <div class="subscription__input-wrapper subscription__input-wrapper--name">
+              <input class="subscription__input" type="text" name="name" placeholder="Имя и фамилия">
+              <span class="subscription__small-caption">Имя и фамилия<sup>*</sup></span>
+            </div>
+            <div class="subscription__input-wrapper subscription__input-wrapper--email">
+              <input class="subscription__input" type="email" name="email" placeholder="E-mail адрес">
+              <span class="subscription__small-caption">E-mail адрес<sup>*</sup></span>
+            </div>
+            <div class="subscription__input-wrapper subscription__input-wrapper--phone">
+              <input class="subscription__input" type="tel" name="phone" placeholder="Телефон">
+              <span class="subscription__small-caption">Телефон<sup>*</sup></span>
+            </div>
+            <button class="subscription__submit btn" type="submit">Подписаться</button>
+          </form>
+          <div class="subscription__note">
+            <p class="subscription__require"><sup class="subscription__asterisk">*</sup>Обязательные для заполнения поля</p>
+            <p class="subscription__confidential">Политика конфиденциальности</p>
+          </div>
+        </div>
+        <div class="response">
+          <p class="response__caption">Спасибо! Мы будем держать<br/> вас в курсе обновлений</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer" id="footer">
+      <div class="main-footer__wrapper">
+        <section class="main-footer__social">
+          <h3 class="visually-hidden">Мы в социальных сетях</h3>
+          <div class="main-footer__social-buttons">
+            <a href="#" class="main-footer__social-btn main-footer__social-btn--fb">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+            <a href="#" class="main-footer__social-btn main-footer__social-btn--vk">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+            <a href="#" class="main-footer__social-btn main-footer__social-btn--inst">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </div>
+          <p class="main-footer__follow">Следите за нашим развитием</p>
+          <p class="main-footer__subscribe">Подпишитесь на наши аккаунты в соц. сетях, знакомьтесь <br/> с нашими проектами и тем, что нас вдохновляет</p>
+        </section>
+        <section class="main-footer__contacts">
+          <h3 class="visually-hidden">Наши контакты</h3>
+          <p class="main-footer__phone">+7 (812) 903-54-45</p>
+          <div class="main-footer__address">
+            <p class="main-footer__street">Ул. Галерная, д 55,</p>
+            <p class="main-footer__city">Санкт-Петербург</p>
+          </div>
+          <a href="mailto:9035445@gmail.com" class="main-footer__email">9035445@gmail.com</a>
+        </section>
+      </div>
+      <section class="main-footer__copyright">
+        <h3 class="visually-hidden">Копирайт</h3>
+        <p class="main-footer__company">© FIX Ремонт, 2016</p>
+      </section>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
+
+</html>
